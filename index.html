@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashbaord</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="row bg-primary text-white border-bottom border-dark">
+        <h1 class="text-center"> Weather Dashboard </h1>
+    </header>
+    <main class="row">
+        <section class="col-sm-4 col-lg-2">
+            <form class="border-bottom border-dark card">
+                <label for="search" class="card-heade text-center fst-italic fw-bold bg-light py-2"> Search for a City: </label>
+                <input type="text" class="m-2" placeholder="Search for a City..." />
+                <button type="submit" class="fw-bold btn btn-info m-2 text-white"> Search! </button>
+            </form>
+            <div>
+                recent searches
+            </div>
+        </section>
+        <div class="col-sm-8 col-lg-10 pe-4">
+            <section class="row border border-dark" id="current-results">
+                <h2 id="location"></h2>
+                <ul id="current-conditions" class="mx-2"></ul>
+            </section>
+            <section class="row" id="five-day">
+                <h2 class="text-decoration-underline"> 5-Day Forecast: </h2>
+            </section>
+        </div>
+    </main>
+</body>
+<script src="./assets/js/script.js"></script>
+</html>
