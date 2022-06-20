@@ -119,9 +119,8 @@ var generateCurrent = function (weather, cityname) {
     //temp, wind, humidity, uv index
     var current = weather.current;
 
-    //hard coded location
     var headingEl = document.querySelector('#location');
-    headingEl.textContent = cityname
+    headingEl.textContent = cityname + " " + currentDate;
 
     //current variables
     var temp = current.temp;
