@@ -27,6 +27,7 @@ var getFiveDays = function (weather) {
     //selects container where five days will go 
     var fiveDay = document.querySelector('#five-day')
 
+    fiveDay.innerHTML = ''
     //creates five div cards to contain weather information
     for (let i = 0; i < daily.length - 3; i++) {
         //formating for the next five dates
