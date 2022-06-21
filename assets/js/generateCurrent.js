@@ -4,7 +4,7 @@ var generateCurrent = function (weather, cityname) {
     var current = weather.current;
 
     var headingEl = document.querySelector('#location');
-    headingEl.textContent = cityname + " " + TimeCheck;
+    headingEl.textContent = cityname + " " + TimeCheck();
 
     //current variables
     var temp = current.temp;
